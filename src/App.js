@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import {useState, useEffect} from 'react'
 import Image from './components/image.js'
 import './App.css';
@@ -63,7 +62,7 @@ function App() {
       </div>
       <div className='container'>
       <button type="button" onClick={backPage} style={{float:"left"}} className="btn btn-primary">Go Back</button>
-      {offset!=0 && <button type="button" onClick={forwardPage} style={{float:"right"}} className="btn btn-primary">Go Forward</button>}
+      {offset!==0 && <button type="button" onClick={forwardPage} style={{float:"right"}} className="btn btn-primary">Go Forward</button>}
       </div>
     </div>
   );
